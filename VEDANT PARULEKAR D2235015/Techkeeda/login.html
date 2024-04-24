@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TechKeeda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "vedant" && password == "12345678") {
+                alert("Login successful");
+                // Redirect to another page or perform any action upon successful login
+                // window.location.href = "success.html"; // Example redirect
+            } else {
+                alert("Invalid username or password");
+            }
+            // Prevent form submission
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <form class="login-form" onsubmit="return validateLogin()">
+            <h2>Login to TechKeeda</h2>
+            <div class="input-group">
+                <input type="text" id="username" required placeholder="Username">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required placeholder="Password">
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+            <p class="form-text">Don't have an account? <a href="signup.html">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>
