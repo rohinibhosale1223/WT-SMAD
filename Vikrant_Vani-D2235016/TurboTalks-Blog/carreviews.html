@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Reviews - Car Blog</title>
+    <link rel="web icon" type="png" href="carlogo.jpg" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #1a1a1a;
+        color: #fff;
+      }
+      .logo {
+        width: 150px;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+      }
+      header,
+      .footer {
+        background-color: #000;
+        text-align: center;
+        padding: 10px 0;
+      }
+      nav {
+        background-color: #202020;
+        text-align: center;
+        padding: 10px 0;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      nav a:hover {
+        color: #ff0000;
+      }
+      .main-content {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 8px;
+      }
+      .review-highlight {
+        background-color: #202020;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+      }
+      .review-highlight img {
+        width: 30%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .review-highlight h2 {
+        color: #ff4500;
+        margin-top: 15px;
+      }
+      .reviews-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .review-card {
+        background-color: #222;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .review-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .review-card h3,
+      .review-card p {
+        margin: 10px 0;
+      }
+      footer {
+        background: #222;
+        color: #d3d4d6;
+      }
+      .socials {
+        list-style-type: none;
+        padding: 0;
+      }
+      .socials li {
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .socials img {
+        width: 32px;
+      }
+      .socials img:hover {
+        opacity: 0.5;
+      }
+      .login-btn {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #8B0000;
+        }
+        .navdiv{
+            position: fixed;
+            left: 0;
+            background-color: black;
+            right: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="navdiv">
+    <header>
+      <img class="logo" src="carlogo.jpg" alt="Car Blog Logo" />
+    </header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="carnews.html">Car News</a>
+      <a href="carreviews.html" style="color: #ff4500">Car Reviews</a>
+      <a href="cargalleries.html">Car Galleries</a>
+      <a href="servicepage.html">Services</a>
+      <a href="about.html">About</a>
+      <form action="login.php">
+        <button class="login-btn">LOGIN</button>
+    </form>
+    </nav>
+  </div>
+    <br>
+    <div class="main-content">
+      <section class="review-highlight">
+        <img src="autoexpo.png" alt="Highlight Car Review" />
+        <h2>AUTO EXPO 2023 THE BIGGEST AUTO EXTRAVAGANZA</h2>
+        <p>
+          Auto Expo is one of the world’s premier auto shows. A signature event,
+          that witness the best minds coming together on a single platform to
+          showcases all that is best in the automotive world, in terms of
+          products, technologies, concepts and trends.
+        </p>
+      </section>
+      <section class="reviews-list">
+        <div class="review-card">
+          <h3>
+            EXCLUSIVE : Toyota Innova HyCross ka Petrol GX Variant | Auto Expo
+            2023
+          </h3>
+          <embed
+            style="width: 200; height: 200"
+            src="https://www.youtube.com/embed/QQ-zS7RprDw"
+          />
+          <p>
+            The new Innova HyCross has elevated its design to a new HY. The
+            muscular SUV stance and stature of the new Innova HyCross is
+            accentuated by its glamorous yet tough Front Grille and a raised
+          </p>
+        </div>
+        <div class="review-card">
+          <h3>Yeh SUV hai Fortuner ka Big Daddy!!! | Auto Expo 2023</h3>
+          <embed
+            style="width: 200; height: 200"
+            src="https://www.youtube.com/embed/Afim_iA3038"
+          />
+          <p>
+            The new Legender houses a refined 6-speed Diesel AT engine. The
+            power on tap complements the cutting-edge design of the Legender
+            seamlessly.
+          </p>
+        </div>
+        <div class="review-card">
+          <h3>Lexus LX500d - Rs 3.8 crore SUV | Auto Expo 2023</h3>
+          <embed
+            style="width: 200; height: 200"
+            src="https://www.youtube.com/embed/cJlNpZUAe9M"
+          />
+          <p>
+            The LX 500d seats up to 5 people comfortably and is powered by a V6
+            3.3-liter twin-turbocharged diesel engine that delivers 304
+            horsepower and control without compromise.
+          </p>
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+      <section class="review-highlight">
+        <img src="compare.png" alt="Highlight Car Review" />
+        <h2>Compare Cars 2024</h2>
+        <p>
+          Important decisions like car purchase are often confusing. The
+          “Compare Cars” tool from TurboTalks is designed to help you in car
+          comparison on the basis of prices, mileage, power, performances and
+          hundreds of other features and specifications. Our car comparison tool
+          now comes with enhanced capabilities to compare cars at version level.
+        </p>
+      </section>
+      <section class="reviews-list">
+        <div class="review-card">
+          <h3>
+            Tata Nexon vs Maruti Brezza vs Kia Sonet vs Hyundai Venue - MAHA
+            COMPARISONE : Toyota Innova HyCross ka Petrol GX Variant | Auto Expo
+            2023
+          </h3>
+          <embed
+            style="width: 200; height: 200"
+            src="https://www.youtube.com/embed/XUEMRPppTF0"
+          />
+          <p>
+            In this video, we compare the big names of the compact SUV, namely
+            the Nexon, Sonet, Brezza and Venue and do their Asli Test. We
+            compare them on the basis of boot space, performance, storage, drive
+            experience etc. Dive in!
+          </p>
+        </div>
+        <div class="review-card">
+          <h3>
+            2022 Maruti Baleno vs Tata ALTROZ vs Hyundai i20 - MAHA COMPARISON
+          </h3>
+          <embed
+            style="width: 200; height: 200"
+            src="https://www.youtube.com/embed/w5qDwXK472I"
+          />
+          <p>
+            Maruti Baleno vs Tata ALTROZ vs Hyundai i20 - which one should you
+            buy and why? We share all the details with you. Check it out in
+            detail. These are all 2022 models of the premium hatchbacks. In
+            terms of overall performance, space, features, second row space,
+            mileage, hill climb and even headlight throw.
+          </p>
+        </div>
+        <div class="review-card">
+          <h3>
+            Hyundai Verna vs Honda City vs Skoda Slavia vs VW Virtus - MAHA
+            COMPARISON
+          </h3>
+          <embed
+            style="width: 200; height: 200"
+            src="https://www.youtube.com/embed/CT0WS2868CI"
+          />
+          <p>
+            Hyundai Verna vs Honda City vs Skoda Slavia vs VW Virtus - which one
+            should you buy and why? We share all the details with you. Check it
+            out in detail. In terms of overall performance, space, features,
+            second row space, mileage, hill climb and even headlight throw.
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>
+        © 2024 by Vikrant Vani |
+        <a href="mailto:workwithvikrant0111@gmail.com"
+          >workwithvikrant0111@gmail.com</a
+        >
+      </p>
+
+      <ul class="socials">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/vikrant-vani-96b329209/"
+            target="_blank"
+            title="Linkedin"
+            ><img src="images/linkedin-logo.png" alt="Linkedin Logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/codeby-vikrant"
+            target="_blank"
+            title="Github"
+            ><img src="images/github-logo.png" alt="Github Logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/_.vikrant_10._/"
+            target="_blank"
+            title="instagram"
+            ><img src="images/insta-logo.png" alt="Insta Logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Galleries - Car Blog</title>
+    <link rel="icon" type="image/png" href="carlogo.jpg" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .logo {
+        width: 150px;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+      }
+      header,
+      .footer {
+        background-color: #222;
+        text-align: center;
+        padding: 10px 0;
+        color: white;
+      }
+      nav {
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+      }
+      nav a:hover {
+        color: #ff4500;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+      }
+      .thumbnail {
+        width: 31%;
+        margin: 1%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .thumbnail img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+      }
+      .thumbnail:hover img {
+        transform: scale(1.1);
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 50px;
+        box-sizing: border-box;
+      }
+      .modal-content {
+        margin: 5% auto;
+        width: 80%;
+      }
+      .modal-content img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      footer {
+        background: #222;
+        color: #d3d4d6;
+      }
+      .socials {
+        list-style-type: none;
+        padding: 0;
+      }
+      .socials li {
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .socials img {
+        width: 32px;
+      }
+      .socials img:hover {
+        opacity: 0.5;
+      }
+      .login-btn {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #8B0000;
+        }
+        .navdiv{
+            position: fixed;
+            left: 0;
+            background-color: black;
+            right: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="carlogo.jpg" alt="Car Blog Logo" />
+    </header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="carnews.html">Car News</a>
+      <a href="carreviews.html">Car Reviews</a>
+      <a href="cargalleries.html" style="color: #ff4500">Car Galleries</a>
+      <a href="servicepage.html">Services</a>
+      <a href="cartpage.html">Cart</a>
+      <a href="about.html">About</a>
+      <form action="login.php">
+        <button class="login-btn">LOGIN</button>
+    </form>
+    </nav>
+    <h1>Mercedes Maybach</h1>
+    <div class="gallery">
+      <!-- Thumbnails for Gallery -->
+      <div class="thumbnail" onclick="openModal('m1.png')">
+        <img src="m1.png" alt="Thumbnail 1" />
+      </div>
+      <div class="thumbnail" onclick="openModal('m2.png')">
+        <img src="m2.png" alt="Thumbnail 2" />
+      </div>
+      <div class="thumbnail" onclick="openModal('m3.png')">
+        <img src="m3.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('m4.png')">
+        <img src="m4.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('m5.png')">
+        <img src="m5.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('m6.png')">
+        <img src="m6.png" alt="Thumbnail 3" />
+      </div>
+      <!-- More thumbnails can be added here -->
+    </div>
+    <br />
+    <h1>BMW //M Series</h1>
+    <div class="gallery">
+      <!-- Thumbnails for Gallery -->
+      <div class="thumbnail" onclick="openModal('b1.png')">
+        <img src="b1.png" alt="Thumbnail 1" />
+      </div>
+      <div class="thumbnail" onclick="openModal('b2.png')">
+        <img src="b2.png" alt="Thumbnail 2" />
+      </div>
+      <div class="thumbnail" onclick="openModal('b3.png')">
+        <img src="b3.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('b4.png')">
+        <img src="b4.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('b5.png')">
+        <img src="b5.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('b6.png')">
+        <img src="b6.png" alt="Thumbnail 3" />
+      </div>
+      <!-- More thumbnails can be added here -->
+    </div>
+    <h1>Pagani</h1>
+    <div class="gallery">
+      <!-- Thumbnails for Gallery -->
+      <div class="thumbnail" onclick="openModal('p1.png')">
+        <img src="p1.png" alt="Thumbnail 1" />
+      </div>
+      <div class="thumbnail" onclick="openModal('p2.png')">
+        <img src="p2.png" alt="Thumbnail 2" />
+      </div>
+      <div class="thumbnail" onclick="openModal('p3.png')">
+        <img src="p3.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('p4.png')">
+        <img src="p4.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('p5.png')">
+        <img src="p5.png" alt="Thumbnail 3" />
+      </div>
+      <div class="thumbnail" onclick="openModal('p6.png')">
+        <img src="p6.png" alt="Thumbnail 3" />
+      </div>
+      <!-- More thumbnails can be added here -->
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" />
+      </div>
+    </div>
+    <footer>
+      <p>
+        © 2024 by Vikrant Vani |
+        <a href="mailto:workwithvikrant0111@gmail.com"
+          >workwithvikrant0111@gmail.com</a
+        >
+      </p>
+
+      <ul class="socials">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/vikrant-vani-96b329209/"
+            target="_blank"
+            title="Linkedin"
+            ><img src="images/linkedin-logo.png" alt="Linkedin Logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/codeby-vikrant"
+            target="_blank"
+            title="Github"
+            ><img src="images/github-logo.png" alt="Github Logo"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/_.vikrant_10._/"
+            target="_blank"
+            title="instagram"
+            ><img src="images/insta-logo.png" alt="Insta Logo"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      function openModal(imageSrc) {
+        document.getElementById("modalImage").src = imageSrc;
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

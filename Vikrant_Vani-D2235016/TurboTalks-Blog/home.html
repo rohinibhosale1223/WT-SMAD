@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Blog</title>
+    <link rel="web icon" type="png" href="carlogo.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .logo {
+            width: 175px;
+            height: 75px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+        .navdiv{
+            position: fixed;
+            left: 0;
+            background-color: black;
+            right: 0;
+        }
+        nav {
+            background-color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #FF0000;
+        }
+        .login-btn {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #8B0000;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .car-section {
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .car {
+            flex: 0 0 calc(20% - 20px); 
+            margin: 10px;
+            text-align: left;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .car img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .car p {
+            margin-top: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        .fc{
+            color: #FF0000;
+            text-align: center;
+        }
+        .footer {
+    background-color: #000000; 
+    color: #FFFFFF; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #FF0000; 
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+.social-links img{
+    width: 20px;
+}
+
+        .opinions-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.opinions-section h2 {
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+.car-opinion {
+    width: calc(33.33% - 20px); 
+    display: inline-block;
+    margin-right: 20px; 
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.car-opinion:last-child {
+    margin-right: 0;
+}
+
+.car-opinion img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.opinion-info {
+    text-align: left;
+}
+
+.opinion-info h3 {
+    color: #FF0000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.opinion-info p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+#home{
+    color: red;
+}
+    .image-container img {
+        transition: transform 0.3s ease;
+    }
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+    footer {
+    background: #222;
+    color: #d3d4d6;
+  }
+  .socials {
+    list-style-type: none;
+    padding: 0;
+  }
+  .socials li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .socials img {
+    width: 32px;
+  }
+  .socials img:hover {
+    opacity: 0.5;
+  }
+  @media screen and (min-widht: 650px) {
+      footer {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 20px;
+      }
+  }
+  @media screen and (max-width: 859px) {
+      footer {
+          text-align: center;
+          padding: 10px;
+      }
+  }
+    </style>
+</head>
+<body>
+    <div class="navdiv">
+    <header>
+        <img class="logo" src="carlogo.jpg">
+    </header>
+    <nav>
+        <a href="home.html" id="home">Home</a>
+        <a href="carnews.html">Car News</a>
+        <a href="carreviews.html">Car Reviews</a>
+        <a href="cargalleries.html">Car Galleries</a>
+        <a href="servicepage.html">Services</a>
+        <a href="cartpage.html" class="cart-count">Cart</a>
+        <a href="about.html">About</a>
+        <form action="login.php">
+            <button class="login-btn">LOGIN</button>
+        </form>
+    </nav>
+</div>
+    <div class="image-container">
+    <div class="container main-content">
+        <p>Welcome to our car blog!</p>
+        <h2 class="fc">Featured Cars 2024</h2>
+        <div class="car-section">
+            <div class="car">
+                <img src="rolls.jpg" alt="Car 1">
+                <p>The Rolls-Royce Spectre is the first all-electric car from the luxury carmaker. It is a sort of spiritual successor to the Phantom and launched in India at an ex-showroom price of Rs. 7.5 crore!</p>
+            </div>
+            <div class="car">
+                <img src="rs6.jpeg" alt="Car 2">
+                <p>Audi is doubling down on the superwagon’s success with a new trim level called the RS6 Avant Performance.</p>
+            </div>
+            <div class="car">
+                <img src="macan.webp" alt="Car 3">
+                <p>The latest Porsche Macan gets cosmetic upgrades as well as a slightly tweaked interior design with added features. The Macan is one of the best driving SUVs money can buy.</p>
+            </div>
+            <div class="car">
+                <img src="bmwi7.webp" alt="Car 4">
+                <p>With the i7, alongside the feat of electrifying the 7 Series, the brand has also offered an exuberant occupant experience.</p>
+            </div>
+            <div class="car">
+                <img src="maybach.jpeg" alt="Car 5">
+                <p>The Mercedes-Maybach GLS 600 doesn’t just do opulence in spades, it can also outpace most sports cars with its AMG GT-derived 4-litre twin-turbo V8. </p>
+            </div>
+            <div class="car">
+                <img src="lexus.jpeg" alt="Car 6">
+                <p>Although the Lexus LX befits an ultra-luxury segment, it commands an uncommon trait of being brute/tough.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="opinions-section">
+        <h2>Opinions on Cars</h2>
+        <div class="car-opinion">
+            <img src="maybachsclass.jpg" alt="Car 1">
+            <div class="opinion-info">
+                <h3>Mercedes-Maybach S Class</h3>
+                <p>An expert opinion on the features and performance of Mercedes-Maybach S Class.  The Mercedes Benz S-class is a high-end luxury vehicle that is usually purchased through authorized dealerships. The buying experience is expected to be smooth and professional, with a focus on personalization and customization of the vehicle according to the customer's preferences.</p>
+            </div>
+        </div>
+        <div class="car-opinion">
+            <img src="911gt3.webp" alt="Car 2">
+            <div class="opinion-info">
+                <h3>Porsche 911 GT3rs</h3>
+                <p>An expert opinion on the features and performance of Porsche 911 GT3rs. One thing has certainly been true of the five previous GT3 RS generations (not counting the mid-life updates) - they’ve all been true class leaders. In every case, contemporary rivals from Ferrari, Lamborghini and everyone else wouldn’t see which way the flat-six beasts went on a racetrack, thanks to powerful engines, low weight figures and enough aerodynamic features to make a fighter pilot jealous.</p>
+            </div>
+        </div>
+        <div class="car-opinion">
+            <img src="bmwm5.jpg" alt="Car 3">
+            <div class="opinion-info">
+                <h3>BMW M5 CS</h3>
+                <p>An expert opinion on the features and performance of BMW M5 CS. Forget about the fact the M5 CS only gets 7kW more power than the regular M5 Competition. It’s totally and utterly irrelevant, because you can’t quantify this car by numbers. It is, quite simply, the best all-round sports sedan I’ve ever driven, even though it’s difficult to call out any one aspect of the car that stands out more than any other.</p>
+            </div>
+        </div>
+        <div class="car-opinion">
+            <img src="jesko.jpg" alt="Car 3">
+            <div class="opinion-info">
+                <h3>Koenigsegg Jesko Absolut</h3>
+                <p>An expert opinion on the features and performance of Koenigsegg Jesko Absolut Accompanying this mighty power is the groundbreaking 9-speed Koenigsegg Light Speed Transmission (LST) system, a revelation in automotive technology, ensuring that the Jesko not only sets new benchmarks in horsepower but also in acceleration and engineering prowess. The Jesko doesn’t just excel in power but also in finesse, with advanced aerodynamics that generate over 1000 kg of downforce, cementing its status as an ultimate track weapon.
+                     </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+          © 2024 by Vikrant Vani |
+          <a href="mailto:workwithvikrant0111@gmail.com"
+            >workwithvikrant0111@gmail.com</a
+          >
+        </p>
+    
+        <ul class="socials">
+          <li>
+            <a href="https://www.linkedin.com/in/vikrant-vani-96b329209/" target="_blank" title="Linkedin"
+              ><img src="images/linkedin-logo.png" alt="Linkedin Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/codeby-vikrant" target="_blank" title="Github"
+              ><img src="images/github-logo.png" alt="Github Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_.vikrant_10._/" target="_blank" title="instagram"
+              ><img src="images/insta-logo.png" alt="Insta Logo"
+            /></a>
+          </li>
+        </ul>
+    </footer>
+</body>
+</html>

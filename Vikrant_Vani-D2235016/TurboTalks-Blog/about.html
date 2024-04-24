@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Blog</title>
+    <link rel="web icon" type="png" href="carlogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .logo {
+            width: 175px;
+            height: 75px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #FF0000;
+        }
+        .login-btn {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #8B0000;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .car-section {
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .car {
+            flex: 0 0 calc(20% - 20px); 
+            margin: 10px;
+            text-align: left;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .car img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .car p {
+            margin-top: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        .fc{
+            color: #FF0000;
+            text-align: center;
+        }
+        .footer {
+    background-color: #000000; 
+    color: #FFFFFF; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #FF0000; 
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+.social-links img{
+    width: 20px;
+}
+
+        .opinions-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.opinions-section h2 {
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+.car-opinion {
+    width: calc(33.33% - 20px); 
+    display: inline-block;
+    margin-right: 20px; 
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.car-opinion:last-child {
+    margin-right: 0;
+}
+
+.car-opinion img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.opinion-info {
+    text-align: left;
+}
+
+.opinion-info h3 {
+    color: #FF0000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.opinion-info p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+#news{
+    color: red;
+}
+#news:hover{
+    color: white;
+}
+#about{
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="carlogo.jpg">
+    </header>
+    <nav>
+    <a href="home.html">Home</a>
+        <a href="carnews.html">Car News</a>
+        <a href="carreviews.html">Car Reviews</a>
+        <a href="cargalleries.html">Car Galleries</a>
+        <a href="servicepage.html">Services</a>
+        <a href="cartpage.html" class="cart-count">Cart</a>
+        <a href="about.html" id="about">About</a>
+        <form action="login.php">
+            <button class="login-btn">LOGIN</button>
+        </form>
+    </nav>
+    <title>Vikrant Vani | Aspiring Swift Developer</title>
+</head>
+<body class="home">
+  <!-- //  INTRO  // -->
+  <div class="content-wrapper">
+    <div class="content-bg">
+      <header>
+        <!-- Start content edits below this line. -->
+        <h1>Vikrant Vani</h1>
+        <h2>Aspiring Web Developer</h2>
+
+        <!-- End content edits here. -->
+      </header>
+
+      <!-- //  ABOUT ME  // -->
+      <main>
+        <!-- Start content edits below this line. -->
+        <p class="info">
+            I'm Vikrant Vani, a passionate learner in the field of Computer Science and Information Technology. I am a second-year student pursuing a degree in Information Technology at MIT ADT College. My enthusiasm for technology and a robust academic background have equipped me with a diverse skill set in IT. I am eager to apply my knowledge and contribute to the tech industry. Currently, I'm focusing on mastering web development technologies and frameworks such as HTML, CSS, JavaScript, and PHP for crafting engaging and dynamic web experiences. I'm excited about exploring new technologies and enhancing my skills in software development. I enjoy delving into new technologies and devising innovative solutions to challenges in software development.
+        </p>
+        <p class="info">
+          To learn more about my work history, check out my
+          <a href="resume.html"> resume</a>. Thanks for stopping by!
+        </p>
+
+        <!-- End content edits here. -->
+      </main>
+    </div>
+  </div>
+  <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
+  <footer>
+    <!-- Start content edits below this line. -->
+    <p>
+      © 2024 by Vikrant Vani |
+      <a href="mailto:workwithvikrant0111@gmail.com"
+        >workwithvikrant0111@gmail.com</a
+      >
+    </p>
+
+    <!-- Add or remove any networks. -->
+    <ul class="socials">
+      <li>
+        <a href="https://www.linkedin.com/in/vikrant-vani-96b329209/" target="_blank" title="Linkedin"
+          ><img src="images/linkedin-logo.png" alt="Linkedin Logo"
+        /></a>
+      </li>
+      <li>
+        <a href="https://github.com/codeby-vikrant" target="_blank" title="Github"
+          ><img src="images/github-logo.png" alt="Github Logo"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/_.vikrant_10._/" target="_blank" title="instagram"
+          ><img src="images/insta-logo.png" alt="Insta Logo"
+        /></a>
+      </li>
+    </ul>
+    <!-- End content edits here. -->
+  </footer>
+  </body>
+  </html>

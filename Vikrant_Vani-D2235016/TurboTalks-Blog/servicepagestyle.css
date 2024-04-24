@@ -1,0 +1,24 @@
+.product-cart {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.product {
+    display: inline block;
+    width: 300px; 
+    margin-bottom: 20px; 
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+.product h4 {
+    margin-top: 0; 
+}
+.product img {
+    max-width: 100%; 
+}
+.product p {
+    margin-top: 5px; 
+}

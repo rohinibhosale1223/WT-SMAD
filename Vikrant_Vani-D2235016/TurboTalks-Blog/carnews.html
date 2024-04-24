@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Blog</title>
+    <link rel="web icon" type="png" href="carlogo.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .logo {
+            width: 175px;
+            height: 75px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+        .navdiv{
+            position: fixed;
+            left: 0;
+            background-color: black;
+            right: 0;
+        }
+        nav {
+            background-color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #FF0000;
+        }
+        .login-btn {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: #FF0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background-color: #8B0000;
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .car-section {
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .car {
+            flex: 0 0 calc(20% - 20px); 
+            margin: 10px;
+            text-align: left;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .car img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .car p {
+            margin-top: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        .fc{
+            color: #FF0000;
+            text-align: center;
+        }
+        .footer {
+            background-color: #000000; 
+            color: #FFFFFF; 
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #FF0000; 
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links img {
+            width: 20px;
+        }
+        #news {
+            color: red;
+        }
+        p.date{
+            color: antiquewhite;
+        }
+        p.title{
+            color: cyan;
+            font-weight: bold;
+        }
+        footer {
+    background: #222;
+    color: #d3d4d6;
+  }
+  .socials {
+    list-style-type: none;
+    padding: 0;
+  }
+  .socials li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .socials img {
+    width: 32px;
+  }
+  .socials img:hover {
+    opacity: 0.5;
+  }
+    </style>
+</head>
+<body>
+    <div class="navdiv">
+    <header>
+        <img class="logo" src="carlogo.jpg">
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="carnews.html" id="news">Car News</a>
+        <a href="carreviews.html">Car Reviews</a>
+        <a href="cargalleries.html">Car Galleries</a>
+        <a href="servicepage.html">Services</a>
+        <a href="cartpage.html" class="cart-count">Cart</a>
+        <a href="about.html">About</a>
+        <form action="login.php">
+            <button class="login-btn">LOGIN</button>
+        </form>
+    </nav>
+    </div>
+    <div class="main-content">
+        <p>Stay updated with the latest car news, reviews, and features right here.</p>
+    </div>
+    <div class="car-section">
+        <!-- Example Car Article -->
+        <div class="car">
+            <p class="date">Published On Mar 25, 2024 09:00:00 AM</p>
+            <img src="news1.png" alt="Car Example">
+            <p class="title">Opinion: Automotive advertising - fact or fiction?</p>
+            <p>It’s high time the automobile industry tightens up its advertising claim</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Mar 18, 2024 11:27:00 AM</p>
+            <img src="news2.png" alt="Car Example 2">
+            <p class="title">Opinion: India's new EV policy offers car brands a level playing field</p>
+            <p>New and existing players will be able to benefit from this policy and other schem</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Mar 16, 2024 09:00:00 AM</p>
+            <img src="news3.png" alt="Car Example">
+            <p class="title">Opinion: Highway speed limits need rethinking
+            </p>
+            <p>Low speed limits on a 6-lane road result in dangerous braking in front of speed cameras.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Mar 09, 2024 09:00:00 AM</p>
+            <img src="news4.png" alt="Car Example">
+            <p class="title">Opinion: Cold brakes; beware</p>
+            <p>Cold brakes that haven’t been used or warmed up can catch you unaware.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Mar 02, 2024 11:26:00 AM</p>
+            <img src="news5.png" alt="Car Example">
+            <p class="title">Opinion: Maruti's upcoming hybrid tech is a masterstroke</p>
+            <p>Maruti Suzuki's upcoming series hybrids, such as the Swift, Fronx and Baleno, could technically be defined as EVs, allowing them to qualify for a lower GST slab.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Feb 04, 2024 09:00:00 AM</p>
+            <img src="news6.png" alt="Car Example">
+            <p class="title">Opinion: Make in India performance EVs coming soon</p>
+            <p>EVs lend themselves better to higher levels of performance and Indian-made EVs will soon deliver over 400hp.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Jan 27, 2024 08:00:00 AM</p>
+            <img src="news7.png" alt="Car Example">
+            <p class="title">Opinion: 3 hurdles the Duster must not trip over</p>
+            <p>The Duster’s comeback can be easy but there are a few hurdles Renault must not stumble over.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Jan 20, 2024 09:00:00 AM</p>
+            <img src="news8.png" alt="Car Example">
+            <p class="title">Opinion: Tips for automotive marketers for 2024</p>
+            <p>From sustainability to limiting the use of influencers, here's how automotive companies can keep the momentum going this year.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Jan 02, 2024 09:00:00 AM</p>
+            <img src="news9.png" alt="Car Example">
+            <p class="title">Opinion: Cars are getting safer, but are drivers?</p>
+            <p>Regulations have made our cars safer, but road infrastructure and driver awareness needs to catch up.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Dec 27, 2023 08:00:00 AM</p>
+            <img src="news10.png" alt="Car Example">
+            <p class="title">Opinion: Luxury carmakers should offer a better customer experience</p>
+            <p>When it comes to luxury cars, very often it’s the product that holds more sway than the brand itself.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Nov 28, 2023 03:30:00 PM</p>
+            <img src="news11.png" alt="Car Example">
+            <p class="title">The vintage elegance of the Mercedes W123</p>
+            <p>Ahead of the Mercedes-Benz Classic Car Rally, here’s getting behind the wheel of the legendary 230 sedan.</p>
+        </div>
+        <div class="car">
+            <p class="date">Published on Dec 16, 2023 07:00:00 AM</p>
+            <img src="news12.png" alt="Car Example">
+            <p class="title">Opinion: Buying a new car as an investment</p>
+            <p>New car prices have shot up recently due to tighter emissions norms, higher input costs and long waiting periods.</p>
+        </div>
+    </div>
+    <footer>
+        <p>
+          © 2024 by Vikrant Vani |
+          <a href="mailto:workwithvikrant0111@gmail.com"
+            >workwithvikrant0111@gmail.com</a
+          >
+        </p>
+    
+        <ul class="socials">
+          <li>
+            <a href="https://www.linkedin.com/in/vikrant-vani-96b329209/" target="_blank" title="Linkedin"
+              ><img src="images/linkedin-logo.png" alt="Linkedin Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/codeby-vikrant" target="_blank" title="Github"
+              ><img src="images/github-logo.png" alt="Github Logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/_.vikrant_10._/" target="_blank" title="instagram"
+              ><img src="images/insta-logo.png" alt="Insta Logo"
+            /></a>
+          </li>
+        </ul>
+    </footer>
+</body>
+</html>
