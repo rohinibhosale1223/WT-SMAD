@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" iPhone 14 Pro",
+        "price": 2000,
+        "image": "image/1.webp"
+    },
+    {
+        "id": 2,
+        "name":" Apple Vison Pro",
+        "price": 3250,
+        "image": "image/2.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Macbooks Pro M3",
+        "price": 3290,
+        "image": "image/3.webp"
+    },
+    {
+        "id": 4,
+        "name":" Vivo X90Pro",
+        "price": 900,
+        "image": "image/4.png"
+    },
+    {
+        "id": 5,
+        "name":" Google Pixel 8Pro",
+        "price": 900,
+        "image": "image/5.png"
+    },
+    {
+        "id": 6,
+        "name":" Sony PS5",
+        "price": 900,
+        "image": "image/6.avif"
+    },
+    {
+        "id": 7,
+        "name":" Honor 10X",
+        "price": 900,
+        "image": "image/7.png"
+    },
+    {
+        "id": 8,
+        "name":" iphone 15 Pro Max",
+        "price": 900,
+        "image": "image/8.webp"
+    }
+
+]
