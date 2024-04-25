@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <style>
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px auto;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        #cartItems {
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 70%;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        #cartItems h2 {
+            color: #2ecc71;
+        }
+        #cartItems p {
+            color: #666;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+
+    <!-- Cart Items -->
+    <div id="cartItems">
+        <h2>Cart</h2>
+        <div id="cartContent"></div>
+        <div id="cartTotal"></div>
+    </div>
+
+    <script src="cart.js"></script>
+
+    <a href="product.php" class="back-button">Go Back to Products Page</a>
+
+</body>
+</html>
