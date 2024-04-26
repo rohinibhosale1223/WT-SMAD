@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":" iPne Pro",
+        "price": 2000,
+        "image": "images (1).jpeg"
+    },
+    {
+        "id": 2,
+        "name":" Vion Pro",
+        "price": 3250,
+        "image": "cam1.jpeg"
+    },
+    {
+        "id": 3,
+        "name":"Pro M3",
+        "price": 3290,
+        "image": "cam2.jpeg"
+    },
+    {
+        "id": 4,
+        "name":" X90Pro",
+        "price": 900,
+        "image": "cam3.jpeg"
+    },
+    {
+        "id": 5,
+        "name":"Pixel 8Pro",
+        "price": 900,
+        "image": "cam4.jpeg"
+    },
+    {
+        "id": 6,
+        "name":" Sony PS5",
+        "price": 900,
+        "image": "cam5.jpeg"
+    },
+    {
+        "id": 7,
+        "name":" Hon 10X",
+        "price": 900,
+        "image": "cam3.jpeg"
+    },
+    {
+        "id": 8,
+        "name":" 74Max",
+        "price": 900,
+        "image": "cam4.jpeg"
+    }
+
+]
