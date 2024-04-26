@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="BuyCourses.html">Buy Courses</a></li>
+                <li><a href="index.php">Login</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="latest-attacks">
+            <h2>Latest Cyber Attacks</h2>
+            <article>
+                <h3>Email Phishing</h3>
+                <img src="email.png">
+                <p>Email phishing is a type of cyber attack that targets individuals through email, text messages, phone calls, and other forms of communication. It involves the use of deceptive messages to trick recipients into revealing sensitive information such as financial details, login credentials, or other personal data. Phishing attacks are a common form of social engineering, where attackers impersonate reputable entities to mislead users into performing specific actions, often involving clicking on malicious links or downloading malicious files.
+
+                    The basic elements of a phishing attack include a message sent by email, social media, or other electronic communication means. Attackers often use public resources, especially social networks, to gather background information about their potential victims, such as names, job titles, email addresses, interests, and activities. This information is then used to create a convincing fake message that appears to come from a known contact or organization. The emails may contain malicious attachments or links to malicious websites, where attackers attempt to collect private information like usernames, passwords, or payment information.
+                    
+                    Phishing attacks can have severe consequences for both individuals and organizations. For individuals, the outcomes can include unauthorized purchases, theft of funds, identity theft, and more. For organizations, the impact can be devastating, leading to financial losses, declining market share, reputation damage, and loss of consumer trust. In some cases, phishing attacks are used as a stepping stone to gain access to corporate or governmental networks as part of a larger, more sophisticated attack.</p>
+            </article>
+            <article>
+                <h3>Social Engineering</h3>
+                <img src="social.jpg">
+                <p>Social engineering is a broad term encompassing various malicious activities that exploit human interactions to trick individuals into making security mistakes or revealing sensitive information. These attacks rely on psychological manipulation rather than exploiting software vulnerabilities, making them particularly dangerous due to their reliance on human error. Social engineering tactics can range from simple to highly sophisticated, leveraging human emotions and motivations such as fear, curiosity, greed, and the desire for financial gain to manipulate victims into compromising their security.
+
+                    The lifecycle of a social engineering attack typically begins with the attacker gathering background information about the intended victim to identify potential entry points and weak security protocols. Once the attacker has established a level of trust with the victim, they can manipulate the victim into breaking security practices, such as revealing sensitive information or granting access to critical resources. This manipulation can take many forms, including impersonating a trusted individual, offering false opportunities, or exploiting human inclinations to trust.</p>
+            </article>
+            <article>
+                <h3>XSS Attacks</h3>
+                <img src="xss.png">
+                <p>Cross-Site Scripting (XSS) is a type of security vulnerability that enables attackers to inject malicious scripts into web pages viewed by other users. These scripts can access any cookies, session tokens, or other sensitive information retained by the browser and used with that site, potentially leading to identity theft, financial loss, or other harmful outcomes. XSS attacks can be categorized into three main types: reflected, stored, and DOM-based.
+
+                    Reflected XSS occurs when an attacker injects malicious code into a URL or form input that is then reflected back to the user's browser. The malicious script executes when the user clicks on the manipulated link or submits the form, potentially leading to unauthorized access to sensitive information.
+                    Stored XSS happens when the malicious script is permanently stored on the target server, such as in a database. When a user accesses a page that includes the stored script, the script executes in their browser, compromising their session or personal information.
+                    DOM-Based XSS, also known as client-side XSS, occurs when the malicious script manipulates the Document Object Model (DOM) of a web page. This type of attack exploits the trust a browser places in JavaScript code that is already on the page, rather than relying on the server to deliver the malicious payload.</p>
+            </article>
+            <!-- Add more articles as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cybersecurity Blog. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

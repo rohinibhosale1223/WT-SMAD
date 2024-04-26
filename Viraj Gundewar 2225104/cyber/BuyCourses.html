@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Site</title>
+  <link rel="stylesheet" href="Buystyles.css">
+</head>
+<body>
+    <header>
+        <h1>Cyber World</h1>
+        <div id="cart">
+          <span id="cart-count">0</span>
+          <button id="view-cart">View Cart</button>
+        </div>
+      </header>
+  <main id="products">
+    <div class="product">
+      <img src="hacking.jpg" alt="Certified Ethical Hacking">
+      <h2>Certified Ethical Hacking</h2>
+      <p>$800</p>
+      <button class="add-to-cart" data-name="Certified Ethical Hacking" data-price="800">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="networking.jpg" alt="Network Security Basics">
+      <h2>Network Security Basics</h2>
+      <p>$250</p>
+      <button class="add-to-cart" data-name="Network Security Basics" data-price="250">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="webdev.png" alt="Web Dev">
+      <h2>Web Dev</h2>
+      <p>$500</p>
+      <button class="add-to-cart" data-name="Web Dev" data-price="500">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="cyberr.jpeg" alt="Introduction to Cyber Security">
+      <h2>Introduction to Cyber Security</h2>
+      <p>$600</p>
+      <button class="add-to-cart" data-name="Introduction to Cyber Security" data-price="600">Add to Cart</button>
+    </div>
+  </main>
+  <aside id="cart-sidebar">
+    <h2>Your Cart</h2>
+    <ul id="cart-items">
+     </ul>
+    <p id="cart-total">Total: $0</p>
+  </aside>
+  <script src="Buyscript.js"></script>
+</body>
+</html>
+
+
+
