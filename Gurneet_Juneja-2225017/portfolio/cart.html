@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+
+        .header {
+            background-color: #b18e77;
+            padding-left: 15px 0;
+            padding-right: 15px 0;
+            font-family:Georgia, 'Times New Roman';
+        }
+
+        .navbar {
+            justify-content: space-between;
+            margin-right: 5%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-text
+        {
+            color: #f2e4d6;
+            text-align: left;
+            padding-left: 40px;
+            font-size: 50px;
+        }
+
+        .nav-list {
+            align-items: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin-right: 40px;
+        }
+
+        .nav-link {
+            color: #f2e4d6;
+            text-decoration:underline;
+            font-size: 20px;
+        }
+
+        .nav-link:hover
+        {
+            color: #fff5ec;
+            text-decoration:#b18e77;
+            font-size: 22px;
+            text-decoration: solid;
+        }
+
+        body {
+            font-family:Georgia, 'Times New Roman';
+            background-color:#fbf4ed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .heading {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #755f51;
+            font-size: 70px;
+            font-weight: 500;
+            text-shadow: 0 0 10px rgba(176, 82, 0, 0.3)
+        }
+
+        .cartItem {
+            width: 75%;
+            margin-left: 170px;
+            margin-top: 30px;
+            margin-bottom: 70px;
+            padding: 20px;
+            background-color: #f2e4d6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+
+        .c2 {
+            display: flex;
+        }
+
+        .pdets {
+            display: inline;
+        }
+        .phead{
+            margin-left: 55px;
+        }
+        .pimg{
+            padding-left: 50px;
+            padding-right: 50px;
+            width: 300px;
+        }
+
+        .pinfo {
+            margin-top: 80px;
+            font-size: 20px;
+            font-weight: 550;
+        }
+
+        .stars {
+            font-size: 40px;
+            padding: 0px;
+        }
+        .button  
+        {
+            width: 150px;
+            height: 35px;
+            background-color:#b18e77;
+            color: #f2e4d6;
+            border-radius: 8px;
+            border: #b18e77;
+        }
+        .buttons {
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .footer {
+            margin-top: 30px;
+            position:relative;
+            bottom: 0px;
+            width: 100%;
+            background-color: #755f51;
+            text-align: center;
+            padding: 25px 0;
+            color: #f2e4d6;
+        }
+
+        .footer-text {
+            color: #f2e4d6;
+            margin: 0;
+        }
+
+        .endbtns {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 155px;
+        }
+
+        .ebutton {
+            width: 250px;
+            height: 45px;
+            background-color:#755f51;
+            color: #f2e4d6;
+            margin-top: 16px;
+            border-radius: 8px;
+            border: #755f51;
+            font-weight: 400;
+            font-size: larger;
+            font-family:Georgia, 'Times New Roman'
+        }
+
+
+</style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+        <div>
+            <h1 class="nav-text">Portfolio</h1>
+        </div>
+        <div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="home.php" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="login.php" class="nav-link">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p class="heading">Cart</p>
+
+    <div class="cartItem">
+        <div class="c1">
+            <h1 class="phead">Anime Stickers</h1>
+            <img class="pimg" src="assets/p4.jpg">
+        </div>
+        <div class="pdets">
+       <div class="c2">
+        <div class="r">
+            <p class="pinfo">Set of 25 Anime Stickers<br>
+            <p style="font-size: large;">Naruto x3 , Gojo x4 , <BR>Nezuko x1 , Takemichi x3 , <BR>Hana x2</p>    
+            <p>[NO COUPON CODE APPLICABLE ON PRODUCT]</p>    
+           
+        </div>
+        <div class="r" style="margin-left: 30px;">
+            <p Style="margin-top: 70px;">
+                <div class="stars"><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span></div>
+                <span>&#10003;</span> Customer's Choice Verified<br> <br>
+                <div class="box">
+                    <p><b>Seller's Info:</b><br>Slush Box Pvt. Ltd.<br>Pune, Maharastra.</p> 
+                    <p style="font-size: 30px; padding-left: 50px;margin-bottom: 70px;"><b>500 Rs.</b></p>
+                </div> 
+           
+        </div>
+       </div>
+    
+       <div class="buttons">
+            <button class="button">Order Now</button>
+            <button class="button">Save For Later</button>
+            <button class="button">Delete</button>
+            <button class="button">Share</button>
+    </div>
+    </div>
+    </div>
+
+    <div class="cartItem">
+        <div class="c1">
+            <h1 class="phead">Posters</h1>
+            <img class="pimg" src="assets/p1.jpg">
+        </div>
+        <div class="pdets">
+       <div class="c2">
+        <div class="r">
+            <p class="pinfo">Set of 7 A4 posters<br>
+            <p style="font-size: large;">Iron Man , Captain America , Jimin<BR>Jungkook , Bangchan , <BR>Sakura , Game Of Thrones</p>    
+            <p>[LOYALTY COUPON CODE APPLICABLE]</p>    
+           
+        </div>
+        <div class="r" style="margin-left: 30px;">
+            <p Style="margin-top: 70px;">
+                <div class="stars"><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span></div>
+                <span>&#10003;</span> Customer's Choice Verified<br> <br>
+                <div class="box">
+                    <p><b>Seller's Info:</b><br>Slush Box Pvt. Ltd.<br>Pune, Maharastra.</p> 
+                    <p style="font-size: 30px; padding-left: 50px;margin-bottom: 70px;"><b>840 Rs.</b></p>
+                </div> 
+           
+        </div>
+       </div>
+    
+       <div class="buttons">
+            <button class="button">Order Now</button>
+            <button class="button">Save For Later</button>
+            <button class="button">Delete</button>
+            <button class="button">Share</button>
+    </div>
+    </div>
+    </div>
+
+    <div class="cartItem">
+        <div class="c1">
+            <h1 class="phead">Polaroids</h1>
+            <img class="pimg" src="assets/p2.jpg">
+        </div>
+        <div class="pdets">
+       <div class="c2">
+        <div class="r">
+            <p class="pinfo">Set of 11 Polaroids<br>
+            <p style="font-size: large;">customisable polaroids of standard size <br> 2.1"x3.4". Photos to be mailed at <br>slush.box.store@gmail.com after order<br>is placed. </p>
+                  
+            <p>[NO COUPON CODE APPLICABLE ON PRODUCT]</p>    
+           
+        </div>
+        <div class="r" style="margin-left: 30px;">
+            <p Style="margin-top: 70px;">
+                <div class="stars"><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span></div>
+                <span>&#10003;</span> Customer's Choice Verified<br> <br>
+                <div class="box">
+                    <p><b>Seller's Info:</b><br>Slush Box Pvt. Ltd.<br>Pune, Maharastra.</p> 
+                    <p style="font-size: 30px; padding-left: 50px;margin-bottom: 70px;"><b>120 Rs.</b></p>
+                </div> 
+           
+        </div>
+       </div>
+    
+       <div class="buttons">
+            <button class="button">Order Now</button>
+            <button class="button">Save For Later</button>
+            <button class="button">Delete</button>
+            <button class="button">Share</button>
+    </div>
+    </div>
+    </div>
+    
+    <div class="endbtns">
+        <button class="ebutton">&lt   Products</button>
+        <div style="display: flex;">
+            <p style="align-self: flex-end; font-size: 25px; font-weight: 600;">Amount : 1460 Rs.</p>
+        <button class="ebutton" style="margin-left: 30px;">Check out   &gt</button>
+        </div>
+        
+</div>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>   

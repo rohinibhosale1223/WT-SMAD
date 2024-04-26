@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding:0px;
+            font-family: Palatino;
+            background-color: #fbf4ed;
+        }
+
+        .header {
+            background-color: #b18e77;
+            padding-left: 15px 0;
+            padding-right: 15px 0;
+            font-family:Georgia, 'Times New Roman';
+        }
+
+        .navbar {
+            justify-content: space-between;
+            margin-right: 5%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-text
+        {
+            color: #f2e4d6;
+            text-align: left;
+            padding-left: 40px;
+            font-size: 50px;
+        }
+
+        .nav-list {
+            align-items: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin-right: 40px;
+        }
+
+        .nav-link {
+            color: #f2e4d6;
+            text-decoration:underline;
+            font-size: 20px;
+        }
+
+        .nav-link:hover
+        {
+            color: #fff5ec;
+            text-decoration:#b18e77;
+            font-size: 22px;
+            text-decoration: solid;
+        }
+
+        .hero {
+            background-color: #fbf4ed;
+            text-align: left;
+            padding: 5%;
+            display: flex;
+            flex-wrap:nowrap;
+            margin: 0px;
+        }       
+        
+        .hero-text
+        {
+           padding: 0%;
+           display: flex;
+           flex-wrap: nowrap;
+           margin-top: 5px;
+        }
+
+        .vl 
+        {
+            margin-left: 0%;
+          padding-right: 10%;
+          border-right: 3px solid; color: #b18e77;
+          height: 600px;
+          border-radius: 25px;
+        }
+        .hero-text2
+        {
+            margin-top: 55px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .hero-title {
+            color: #755f51;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            color: #252525;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .image1
+        {
+            margin-top: 45px;
+            align-items: center;
+            filter: drop-shadow(0px 0px 15px #b18e77) 
+        }
+
+        .footer {
+            position:relative;
+            bottom: 0px;
+            width: 100%;
+            background-color: #755f51;
+            text-align: center;
+            padding: 25px 0;
+            color: #f2e4d6;
+        }
+
+        .footer-text {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+        <div>
+            <h1 class="nav-text">Portfolio</h1>
+        </div>
+        <div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="home.php" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="login.php" class="nav-link">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-text">
+            <div>
+                <h1 class="hero-title" style="color: #755f51;">Profile</h1>
+                
+                <p class="hero-description">
+                    <b style="color:#755f51;">Name: </b><br><BR>
+                         Gurneet Juneja
+                </p>
+                <hr style="color: #755f51;">
+                <p class="hero-description">
+                     <b style="color:#755f51;">Residence: </b><br><bR>
+                        Manikchand Mallabar Hills,<br>
+                        Lullanagar- Dhorvadi,<br>
+                        Pune, Maharashtra.<br>
+                        411040.
+                </p>
+                <hr style="color: #755f51;">
+                <p class="hero-description">
+                    <b style="color:#755f51;">Languages: </b><br><bR>
+                        English<br>
+                        Hindi<br>
+                        Punjabi<br>
+                        Marathi
+                </p>
+                <hr style="color: #755f51;">
+            </div>
+           <div class="vl"></div>
+        </div>
+       
+        <div class="hero-text2">
+            <h1 class="hero-title">Hello,  I am Gurneet Juneja!</h1>
+           <p class="hero-description">Currently a full- time student at <br>
+            <b style="color:#755f51;">MIT ADT University</b>, Loni Kalbhor <br><br>
+            Persuing Under Graduate Degree of<br>
+            <b style="color:#755f51;">Information Technology</b> With A<br>
+            Specialization In Software And Mobile <br>
+            App Development. <br><br><br>
+            Previous Education: <bR><bR>
+            <b style="color:#755f51;">The Bishop's co-Ed School, Undri, Pune.</b><br>
+            10th Board: 86.6%<br>
+            ICSE Board<bR><bR>
+            <b style="color:#755f51;">Rims International Junior College</b><br>
+            Secured 3rd place in college. HSC Board<br><br>
+            
+        </p>
+        
+        </div>
+        <div class="image1">
+            <img src="assets/portrait.jpg" class="w3-round-large" alt="portrait" style="width:350px; margin: 30px; border-radius: 25px; ">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

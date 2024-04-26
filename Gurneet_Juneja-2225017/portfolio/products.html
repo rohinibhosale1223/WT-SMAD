@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        /* CSS styles */
+        .header {
+            background-color: #b18e77;
+            padding-left: 15px 0;
+            padding-right: 15px 0;
+            font-family:Georgia, 'Times New Roman';
+        }
+
+        .navbar {
+            justify-content: space-between;
+            margin-right: 5%;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-text
+        {
+            color: #f2e4d6;
+            text-align: left;
+            padding-left: 40px;
+            font-size: 50px;
+        }
+
+        .nav-list {
+            align-items: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            display: inline-block;
+            margin-right: 40px;
+        }
+
+        .nav-link {
+            color: #f2e4d6;
+            text-decoration:underline;
+            font-size: 20px;
+        }
+
+        .nav-link:hover
+        {
+            color: #fff5ec;
+            text-decoration:#b18e77;
+            font-size: 22px;
+            text-decoration: solid;
+        }
+
+        body {
+            font-family:Georgia, 'Times New Roman';
+            background-color:#fbf4ed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .pimg{
+            padding-left: 50px;
+            padding-right: 50px;
+            width: 200px;
+        }
+        .intro {
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .cart-icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            margin-right: 40px;
+         
+        }
+
+        .r0
+        {
+            margin-top: 40px;
+            display: flex;
+            justify-content:right;
+        }
+        .r1
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pdets
+        {
+            text-align: center;
+        }
+
+        .price
+        {
+            font-weight: bold;
+            text-decoration: solid;
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 30px;
+            position:relative;
+            bottom: 0px;
+            width: 100%;
+            background-color: #755f51;
+            text-align: center;
+            padding: 25px 0;
+            color: #f2e4d6;
+        }
+
+        .footer-text {
+            color: #f2e4d6;
+            margin: 0;
+        }
+
+        button  
+        {
+            width: 60%;
+            height: 35px;
+            background-color:#b18e77;
+            color: #f2e4d6;
+            border-radius: 8px;
+            border: #b18e77;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+        <div>
+            <h1 class="nav-text">Portfolio</h1>
+        </div>
+        <div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="home.php" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="login.php" class="nav-link">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div class="r0">
+        <p style="color: #333; text-decoration: solid; text-decoration: underline; font-weight: 600;font-size: 20px;">3</p>
+        <a href="cart.html"><img src="assets/cart.jpg" class="cart-icon"></a>
+    </div>
+
+    <div class="r1">
+        <div class="container">
+            <h1>Posters</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p1.jpg">
+            </div>
+            <div class="pdets">
+                <p>A3/A4/A5<BR>Posters and wall decorations</p>
+                <p class="price">Starting at 60 Rs. /piece</p>
+                <p style="color: #7ac3dc;">(Apply Your Loyalty Coupon Code)</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Polaroids</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p2.jpg">
+            </div>
+            <div class="pdets">
+                <p>Customised High Quality Polaroids<br>(set of 11)</p>
+                <p class="price">120 Rs.</p>
+                <p style="color: #7ac3dc;">25% off Summer Sale</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Personalised Wall</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p3.jpg">
+            </div>
+            <div class="pdets">
+                <p>Pesonalised Wall Decorations<br>Customisation charges apply</p>
+                <p class="price">Staring at 450 Rs.</p>
+                <p style="color: #7ac3dc;">(Apply Your Loyalty Coupon Code)</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="r1">
+        <div class="container">
+            <h1>Anime Stickers</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p4.jpg">
+            </div>
+            <div class="pdets">
+                <p>Tanjero, Gojo, Naruto,<br>Sakura, Eren, Kakash...</p>
+                <p class="price">Starting at 20 Rs./piece</p>
+                <p style="color: #7ac3dc;">18% off Summer Sale</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Friends Stickers</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p5.jpg">
+            </div>
+            <div class="pdets">
+                <p>Monica, Chandler, Pheobe,<bR>Ross, Rachel, Joey,...</p>
+                <p class="price">Starting at 20 Rs./piece</p>
+                <p style="color: #7ac3dc;">18% off Summer Sale</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Bookish Stickers</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p6.jpg">
+            </div>
+            <div class="pdets">
+                <p>SJM, Fantasy, Fiction<br>Rom-Com, Mystery, Comtempor...</p>
+                <p class="price">Starting at 20 Rs./piece</p>
+                <p style="color: #7ac3dc;">18% off Summer Sale</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    
+
+      <div class="r1">
+        <div class="container">
+            <h1>Gaming Stickers</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p7.jpg">
+            </div>
+            <div class="pdets">
+                <p>Valorent, GTA, PUBG,<br>Red Redemption, League Of Leged...</p>
+                <p class="price">Starting at 20 Rs./piece</p>
+                <p style="color: #7ac3dc;">18% off Summer Sale</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Korean Stickers</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p8.jpg">
+            </div>
+            <div class="pdets">
+                <p>BTS, TXT, BlackPink,<br>Straykids, kdrama, Enhypen...</p>
+                <p class="price">Starting at 20 Rs./piece</p>
+                <p style="color: #7ac3dc;">18% off Summer Sale</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Zodiac Stickers</h1>
+            <div class="intro">
+                <img class="pimg" src="assets/p9.jpg">
+            </div>
+            <div class="pdets">
+                <p>Aries, Scorpio, Gemini,<br>Libra, Virgo, Taurus,...</p>
+                <p class="price">Starting at 20 Rs./piece</p>
+                <p style="color: #7ac3dc;">18% off Summer Sale</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
