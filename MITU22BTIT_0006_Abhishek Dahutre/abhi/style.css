@@ -1,0 +1,126 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f20056 !important;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.welcome-item {
+    color: #fff; /* Text color */
+    font-weight: bold;
+    margin-left: -150%;
+    margin-right: 30%; /* Pushes the container to the right */
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+/* Welcome Section Styles */
+.welcome {
+    background-color: #f20056;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.headTag {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subTag {
+    font-size: 1.5rem;
+}
+
+/* Featured Bikes Section Styles */
+.sectionHead {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bike-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box h4 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #f20056 !important;
+    border-color: #f20056 !important;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #dc004e !important;
+    border-color: #dc004e !important;
+}
+
+/* About Us and Contact Us Section Styles */
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about-container {
+    padding-top: 10%;
+}
+
+.about-sectionHead {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 10%;
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
