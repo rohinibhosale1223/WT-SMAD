@@ -1,0 +1,55 @@
+
+<!-- navbar.html -->
+<style>
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .navbar-right {
+        float: right;
+    }
+</style>
+
+<?php
+// Assuming you're checking the existence of 'username' in the URL or session
+$username = isset($_GET['username']) ? $_GET['username'] : null;
+
+if ($username): ?>
+    <div class="navbar">
+        <a href="index.php?username=<?php echo $username; ?>">Home</a>
+        <a href="products.php?username=<?php echo $username; ?>">Products</a>
+        <a href="cart.php?username=<?php echo $username; ?>">Cart</a>
+        <a href="about.php?username=<?php echo $username; ?>">About</a>
+        <a href="contact.php?username=<?php echo $username; ?>">Contact Us</a>
+        <div class="navbar-right">
+            <a href="index.php">Logout</a> <!-- Adjust link as needed -->
+        </div>
+    </div>
+<?php else: ?>
+    <div class="navbar">
+        <a href="index.php">Home</a>
+        <a href="products.php">Products</a>
+        <a href="cart.php">Cart</a>
+        <a href="about.php">About</a>
+        <a href="contact.php">Contact Us</a>
+        <div class="navbar-right">
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+        </div>
+    </div>
+<?php endif; ?>
