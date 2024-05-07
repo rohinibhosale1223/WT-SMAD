@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.product-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.product-list li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.product-list li:last-child {
+    margin-right: 0;
+}
+
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart-items h2 {
+    margin-bottom: 10px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+article p {
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    width: 50px;
+    margin-bottom: 10px; /* Add bottom margin to images */
+}
+
+button.add-to-cart {
+    margin-top: 10px; /* Add top margin to the "Add to Cart" button */
+}
