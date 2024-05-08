@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva's Blog</title>
+</head>
+<body>
+    
+    
+    <h3 style="color: red;">AG Blogs</h3>
+    <h1 style="text-align: center;color:royalblue;">TOP 10 TREKS OF MAHARASHTRA</h1>
+    <h2 style="text-align: center;color: aliceblue;"></h2>
+</body>
+</html>

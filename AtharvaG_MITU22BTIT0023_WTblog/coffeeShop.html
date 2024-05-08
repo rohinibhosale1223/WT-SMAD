@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('coffee full background.jpg');;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .coffee-cup {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Our Coffee Shop</h1>
+    <img src="coffeecup png.jpg" alt="Coffee Cup" class="coffee-cup">
+    
+    <table>
+      <tr>
+        <th>Coffee Type</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Americano</td>
+        <td>$2.50</td>
+      </tr>
+      <tr>
+        <td>Latte</td>
+        <td>$3.00</td>
+      </tr>
+      <tr>
+        <td>Cappuccino</td>
+        <td>$3.50</td>
+      </tr>
+    </table>
+    
+    <form>
+      <label for="coffee-type">Select Coffee Type:</label>
+      <select id="coffee-type">
+        <option value="americano">Americano - $2.50</option>
+        <option value="latte">Latte - $3.00</option>
+        <option value="cappuccino">Cappuccino - $3.50</option>
+      </select>
+      <br>
+      <button type="submit" class="button">Order Now</button>
+    </form>
+  </div>
+</body>
+</html>
