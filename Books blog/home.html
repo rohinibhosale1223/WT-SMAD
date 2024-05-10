@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Blog Website - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Books Blog</h1>
+        <div class="header-options">
+            <div class="genre">
+                <label for="genreSelect">Select Genre:</label>
+                <select id="genreSelect">
+                    <option value="all">All Genres</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="story">Story</option>
+                </select>
+            </div>
+            <button id="viewCart">View Cart</button>
+        </div>
+        <div class="blogs">
+            <div class="blog" data-genre="fantasy">
+                <img src="fantasy_book.jpg" alt="Fantasy Book">
+                <h2 class="book-title">The Lord of Rings</h2>
+                <p class="book-description">"The Lord of the Rings" is a classic fantasy novel by J.R.R. Tolkien. It follows the journey of Frodo Baggins as he sets out to destroy the One Ring, a powerful artifact that could bring about the destruction of Middle-earth if it falls into the wrong hands. Alongside a diverse fellowship of companions, including hobbits, elves, dwarves, and men, Frodo faces numerous challenges and battles against dark forces in his quest to save his world. Filled with adventure, magic, and themes of friendship, courage, and the fight against evil, "The Lord of the Rings" is an enduring tale beloved by readers of all ages.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            <div class="blog" data-genre="mystery">
+                <img src="mystery_book.jpg" alt="Mystery Book">
+                <h2 class="book-title">If she knew</h2>
+                <p class="book-description">"If She Knew" is a gripping mystery novel written by Blake Pierce. The story revolves around Riley Paige, an FBI agent haunted by her past, who finds herself entangled in a perplexing case involving a series of murders. As Riley delves deeper into the investigation, she uncovers shocking secrets and faces dangerous adversaries, all while battling her own inner demons. With suspenseful twists and a race against time, "If She Knew" keeps readers on the edge of their seats until the very end.
+
+
+
+
+
+</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+            <div class="blog" data-genre="story">
+                <img src="story_book.jpg" alt="Story Book">
+                <h2 class="book-title">The Random House Book of Bedtime Stories</h2>
+                <p class="book-description">"The Random House Book of Bedtime Stories" is actually a collection of classic children's tales, rather than a mystery novel. It includes a variety of enchanting stories perfect for winding down at the end of the day. From fairy tales to fables, each story is carefully selected to captivate young imaginations and foster a love for reading. With charming illustrations and timeless narratives, this anthology promises to delight both children and parents alike, making bedtime a magical and memorable experience.</p>
+                <button class="addToCart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
