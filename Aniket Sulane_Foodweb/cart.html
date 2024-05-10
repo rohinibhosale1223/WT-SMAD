@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cart</title>
+    <style>
+        /* Add CSS styles for cart items display */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cart-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+
+        .cart-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .cart-item-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-item-details {
+            flex-grow: 1;
+        }
+
+        .cart-item-actions {
+            margin-top: 10px;
+        }
+
+        .delete-btn {
+            background-color: #b5651d;
+            color: #fff;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Cart</h1>
+
+    <div id="cartItems"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            const cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+
+            cartItems.forEach(item => {
+                const cartItemDiv = document.createElement('div');
+                cartItemDiv.classList.add('cart-item');
+
+                const itemImage = document.createElement('img');
+                itemImage.src = 'path_to_your_item_image'; // Replace with actual image path
+                itemImage.alt = item.name;
+
+                const itemDetails = document.createElement('div');
+                itemDetails.classList.add('cart-item-content');
+
+                const itemName = document.createElement('h3');
+                itemName.textContent = item.name;
+
+                const itemPrice = document.createElement('p');
+                itemPrice.textContent = `Price: ₹${item.price}`;
+
+                const itemQuantity = document.createElement('p');
+                itemQuantity.textContent = `Quantity: ${item.quantity}`;
+
+                const deleteBtn = document.createElement('button');
+                deleteBtn.textContent = 'Delete';
+                deleteBtn.classList.add('delete-btn');
+                deleteBtn.onclick = () => deleteItem(item.name);
+
+                itemDetails.appendChild(itemName);
+                itemDetails.appendChild(itemPrice);
+                itemDetails.appendChild(itemQuantity);
+                itemDetails.appendChild(deleteBtn);
+
+                cartItemDiv.appendChild(itemImage);
+                cartItemDiv.appendChild(itemDetails);
+
+                cartItemsContainer.appendChild(cartItemDiv);
+            });
+
+            function deleteItem(itemName) {
+                let updatedCartItems = cartItems.filter(item => item.name !== itemName);
+                sessionStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+                location.reload(); // Refresh page to reflect changes
+            }
+        });
+    </script>
+</body>
+</html>

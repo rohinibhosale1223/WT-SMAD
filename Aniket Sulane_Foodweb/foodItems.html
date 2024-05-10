@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Lighter shade of grey background */
+        }
+
+        nav {
+            background-color: #333; /* Matching heading background color */
+            color: #fff; /* Text color for the navigation bar */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            color: #fff; /* White color for heading */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 28px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #d9d3d3; /* Grey background for navigation links */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: #333; /* Text color for navigation links */
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #b5651d; /* Brownish color on hover */
+            color: #fff; /* White text color on hover */
+        }
+
+        /* CSS for the food items container */
+        .food-items-container {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding: 20px;
+            gap: 20px; /* Gap between items */
+            justify-content: center; /* Center items horizontally */
+            background-color: #f0f0f0; /* Lighter shade of grey background */
+            white-space: nowrap; /* Prevent item wrapping */
+        }
+
+        .food-item {
+            width: 300px; /* Increased width for each food item */
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #fff; /* White background for items */
+            margin-right: 20px; /* Right margin between items */
+            flex-shrink: 0; /* Prevent items from shrinking */
+            display: flex;
+            flex-direction: column;
+            height: 400px; /* Fixed height to accommodate content */
+        }
+
+        .food-item img {
+            width: 100%; /* Make images fill the container */
+            border-radius: 8px;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Preserve aspect ratio and cover */
+            margin-bottom: 20px; /* Margin below the image */
+        }
+
+        .food-item-content {
+            flex-grow: 1; /* Allow content to expand within the container */
+            overflow-y: auto; /* Enable vertical scrolling if needed */
+            padding-bottom: 20px; /* Additional padding at the bottom */
+        }
+
+        /* Style for "Add to Cart" button */
+        .add-to-cart {
+            background-color: #ddd; /* Lighter shade of grey */
+            color: #333; /* Darker text color */
+            padding: 10px 20px; /* Padding around the text */
+            border: none; /* Remove border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #ccc; /* Darker shade on hover */
+        }
+
+        /* Style for active navigation link */
+        nav ul li a.active {
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>FOODIE Mart</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li> <!-- Link to cart.html -->
+            </ul>
+        </nav>
+    </nav>
+
+    <div class="food-items-container">
+        <!-- Food Items -->
+        <div class="food-item">
+            <img src="img.jpg" alt="Pasta">
+            <div class="food-item-content">
+                <h3>Pasta</h3>
+                <p>Delicious pasta dishes crafted with authentic flavors.</p>
+                <p>Price: ₹250</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Pasta', 250)">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="imggg.jpg" alt="Veg Platter">
+            <div class="food-item-content">
+                <h3>Veg Platter</h3>
+                <p>Description of the food item goes here.</p>
+                <p>Price: ₹180</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Veg Platter', 180)">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="imagee.jpg" alt="Corn Fresh">
+            <div class="food-item-content">
+                <h3>Corn Fresh</h3>
+                <p>Enjoy farm-fresh corn in our seasonal culinary delights.</p>
+                <p>Price: ₹250</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Corn Fresh', 250)">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="image.jpg" alt="Cheese Cake">
+            <div class="food-item-content">
+                <h3>Cheese Cake</h3>
+                <p>Treat yourself to creamy cheesecakes with heavenly flavors.</p>
+                <p>Price: ₹250</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Cheese Cake', 250)">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="imageee.jpg" alt="Starter">
+            <div class="food-item-content">
+                <h3>Starter</h3>
+                <p>Excite your palate with enticing starters bursting with flavors.</p>
+                <p>Price: ₹250</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Starter', 250)">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="pic.jpg" alt="Coffee">
+            <div class="food-item-content">
+                <h3>Coffee</h3>
+                <p>Indulge in aromatic coffee brewed to perfection.</p>
+                <p>Price: ₹250</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Coffee', 250)">Add to Cart</button>
+        </div>
+
+        <div class="food-item">
+            <img src="joseph-gonzalez-QaGDmf5tMiE-unsplash.jpg" alt="Egg Dish">
+            <div class="food-item-content">
+                <h3>Egg Dish</h3>
+                <p>Savor our exquisite egg creations for a delightful meal.</p>
+                <p>Price: ₹250</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Egg Dish', 250)">Add to Cart</button>
+        </div>
+
+        <!-- Add more food items here -->
+
+    </div>
+
+    <script>
+        // Function to add item to cart
+        function addToCart(itemName, itemPrice) {
+            const cartItem = { name: itemName, price: itemPrice, quantity: 1 };
+            let cartItems = JSON.parse(sessionStorage.getItem('cartItems')) || [];
+
+            // Check if item already exists in cart
+            const existingItemIndex = cartItems.findIndex(item => item.name === itemName);
+
+            if (existingItemIndex !== -1) {
+                // Item exists, increase quantity
+                cartItems[existingItemIndex].quantity++;
+            } else {
+                // Item doesn't exist, add to cart
+                cartItems.push(cartItem);
+            }
+
+            // Store updated cart items in sessionStorage
+            sessionStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Redirect to cart.html
+            window.location.href = 'cart.html';
+        }
+    </script>
+</body>
+</html>
